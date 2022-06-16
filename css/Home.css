@@ -1,0 +1,17 @@
+.register {
+    position: absolute;
+    width: 90vw !important;
+    height: auto !important;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.result{
+
+    justify-items: center;
+    flex-direction: column;
+}
+
+

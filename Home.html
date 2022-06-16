@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebApp for all 4 labs</title>
+    <link href="css/Home.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="node_modules/chart.js/dist/chart.js"></script>
+</head>
+<body>
+<form class="register">
+    <h1 class="register-title">Аналіз текстової строки</h1>
+    <div class="register-switch">
+        <input  type="radio" name="char" id="char"  class="register-switch-input" checked>
+        <label for="char" onclick="Check('char')" class="register-switch-label">Посимвольний пошук</label>
+        <input type="radio" name="str" id="str" class="register-switch-input">
+        <label for="str" onclick="Check('str')" class="register-switch-label">Построковий пошук</label>
+    </div>
+    <textarea type="text" style="height: 10rem" id="text" class="register-input" placeholder="Місце для вводу"></textarea>
+    <div style="display: none">
+        <input type="text" id="search" class="register-input" placeholder="Пошукова строка">
+    </div>
+    <input type="button" id="Submit" onclick="SearchChar()" value="Аналізувати" class="register-button">
+    <div class="result" style="display: none" id="Result">
+        <canvas id="myChart" style="width:100%;max-width:70vw; min-height: 30vh; max-height: 40vh "></canvas>
+         <div id="extremes" style="display: none"></div>
+        <input type="button"  onclick="ShowTable()" value="Показати табличку" class="register-button">
+    </div>
+</form>
+<script src="node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/BLL.js"></script>
+</body>
+</html>
