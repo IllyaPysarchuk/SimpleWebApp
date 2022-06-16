@@ -3,6 +3,10 @@
 ### To run this app:
 - clone this repo `git clone https://github.com/IllyaPysarchuk/WebApp.git`
 -   launch `Home.html`
+
+
+![](https://github.com/IllyaPysarchuk/SimpleWebApp/blob/main/images/working_app_test.gif)
+
 -------------
 | Name  | Telegram |
 | :------------ | :-----|
